@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_marginHorizontal="32dp"
+    android:layout_marginBottom="100dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ad"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="24dp"
+        android:text="اسم المستخدم : admin" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pas"
+        android:layout_below="@+id/ad"
+        android:layout_marginBottom="24dp"
+
+        android:text="كلمة المرور : 1234"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingHorizontal="14dp"
+        android:textColorHint="@color/grey"
+        android:layout_below="@+id/pas"
+        android:hint="اسم المستخدم"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/username"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingHorizontal="14dp"
+        android:hint="كلمة السر"
+        android:textColorHint="@color/grey"
+        android:layout_below="@id/username"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/password"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/password"
+        android:text="تسجيل الدخول"/>
+
+</RelativeLayout>

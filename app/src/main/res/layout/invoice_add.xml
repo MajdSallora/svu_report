@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AddInvoice"
+    android:layout_margin="32dp"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+    <Spinner
+        android:id="@+id/agentListDrop"
+        android:background="@drawable/custom_spinner"
+        android:layout_marginBottom="24dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"/>
+    <Spinner
+        android:id="@+id/typeListDrop"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="24dp"
+
+        android:background="@drawable/custom_spinner"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agentListDrop"
+        android:spinnerMode="dropdown"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingHorizontal="14dp"
+
+        android:textColorHint="@color/grey"
+        android:inputType="number"
+        android:layout_below="@id/typeListDrop"
+        android:hint="الكمية"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/numberInvoice"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingHorizontal="14dp"
+
+        android:hint="السعر"
+        android:textColorHint="@color/grey"
+        android:layout_below="@id/numberInvoice"
+        android:layout_marginBottom="24dp"
+        android:inputType="number"
+        android:background="@drawable/custom_input"
+        android:id="@+id/priceInvoice"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:paddingHorizontal="14dp"
+        android:layout_height="60dp"
+        android:textColorHint="@color/grey"
+        android:layout_below="@id/priceInvoice"
+        android:hint="الوصف"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/desInvoice"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveInvoice"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/desInvoice"
+        android:text="Save"/>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TypeAdd"
+    android:layout_margin="32dp"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingHorizontal="14dp"
+        android:textColorHint="@color/grey"
+        android:hint="الاسم"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/typeName"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingHorizontal="14dp"
+        android:hint="الوصف"
+        android:textColorHint="@color/grey"
+        android:layout_below="@id/typeName"
+
+        android:layout_marginBottom="24dp"
+        android:id="@+id/typeDes"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/typeSave"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/typeDes"
+        android:text="Save"/>
+
+</RelativeLayout>

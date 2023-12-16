@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+    <GridView
+        android:id="@+id/homeGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="16dp"
+        android:horizontalSpacing="16dp"
+        android:numColumns="2"/>
+<!--    <include android:id="@+id/homeGrid"/>-->
+
+
+    <include layout="@layout/grid_view_home"/>
+
+    <ImageView
+        android:id="@+id/simpleImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/homeGrid"
+        android:src="@mipmap/ic_launcher_foreground" />
+
+</RelativeLayout>
